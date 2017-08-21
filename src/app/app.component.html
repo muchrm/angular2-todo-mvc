@@ -1,3 +1,8 @@
 <h1>
   {{title}}
 </h1>
+<div>
+  <input type="text" #task>
+  <button (click)="createTask(task.value)">Create</button>
+</div>
+<app-task-list [tasks] = "tasks"></app-task-list>
